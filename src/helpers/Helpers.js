@@ -26,10 +26,10 @@ export const validateInputs = (userData, setError) => {
 
     if (typeof password !== undefined) {
         // /^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[a-a])(?=.*[@#$%&]).*$/
-        if (!password.match(/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[a-z]).*$/)) {
-            formValid = false;
-            errorMsg.passwordError = 'Password requires at least 6 characters';
-        }
+        // if (!password.match(/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[a-z]).*$/)) {
+        //     formValid = false;
+        //     errorMsg.passwordError = 'Password requires at least 6 characters';
+        // }
     }
 
     if (role === '') {
@@ -63,7 +63,7 @@ export const departmentsArray = () => {
             id: 3,
             title: 'Sales/Marketing',
             key: 'departments'
-        },
+        }
     ];
 
     return result;
@@ -85,7 +85,7 @@ export const prioritiesArray = () => {
             id: 2,
             title: 'High',
             key: 'priorities'
-        },
+        }
     ];
 
     return result;

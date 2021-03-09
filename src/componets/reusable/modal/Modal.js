@@ -10,7 +10,7 @@ const Modal = props => {
         <>
             {
                 visible ?
-                <div className="modal-wrapper">
+                <div className="modal-wrapper modal-dialog-scrollable">
                     <div className="modal-box">
                         <div className="modal-box-header">
                             <h3>{header}</h3>
