@@ -6,7 +6,8 @@ export const apiEndPoint = () => {
 export const configHeader = () => {
     const config = {
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://ticket-app-be.herokuapp.com'
         }
     };
     return config;
