@@ -7,7 +7,7 @@ export const configHeader = () => {
     const config = {
         headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://ticket-app-frontend.netlify.app'
+            'Access-Control-Allow-Origin': '*'
         }
     };
     return config;
