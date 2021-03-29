@@ -26,10 +26,10 @@ export const validateInputs = (userData, setError) => {
 
     if (typeof password !== undefined) {
         // /^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[a-a])(?=.*[@#$%&]).*$/
-        // if (!password.match(/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[a-z]).*$/)) {
-        //     formValid = false;
-        //     errorMsg.passwordError = 'Password requires at least 6 characters';
-        // }
+        if (!password.match(/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/)) {
+            formValid = false;
+            errorMsg.passwordError = 'Password must be at least 6 characters long. It must contain at least one uppercase, lowercase and number.';
+        }
     }
 
     if (role === '') {
